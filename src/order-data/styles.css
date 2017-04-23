@@ -1,0 +1,23 @@
+@import '../ui/variables.css';
+
+.order-data {
+    background-color: var(--grey-background);
+    padding: 10px 0;
+    display: inline-flex;
+    font-size: 10px;
+    width: 100%;
+    text-align: left;
+    height: 40px;
+}
+.column {
+    width: 33%;
+}
+.status, .assignee, .delivery {
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.column-status {
+    padding-left: 10px;
+}

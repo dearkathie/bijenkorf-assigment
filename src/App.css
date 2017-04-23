@@ -1,0 +1,10 @@
+@import './ui/variables.css';
+
+body {
+  height: 100%;
+}
+
+.container {
+  width: 320px;
+  margin: 10px auto;
+}

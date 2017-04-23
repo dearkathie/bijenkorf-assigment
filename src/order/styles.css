@@ -1,0 +1,66 @@
+@import '../ui/variables.css';
+
+.order-item {
+    display: inline-flex;
+    font-size: 10px;
+    height: 70px;
+    margin: 20px 10px 0px 10px;
+    border-bottom: 1px solid var(--secondary-text);
+}
+
+.ordered-item-img {
+    margin-top: -20px;
+    margin-left: 40px;
+}
+
+.order-item-text {
+    display: block;
+}
+.ordered-item-name{
+    font-size: 12px;
+    font-weight: bold;
+}
+.ordered-item-description {
+    color: var(--secondary-text);
+    margin-top: 5px;
+    display: block;
+    display: -webkit-box;
+    max-width: 210px;
+    max-height: 50px;
+    font-size: 10px;
+    line-height: 1.4;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* All about custom checkbox */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+
+[type="checkbox"]:checked + label {
+  position: relative;
+  cursor: pointer;
+}
+
+[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left: 0; 
+  top: 5px;
+  width: 35px;
+  height: 35px;
+  background: #F6A900;
+}
+[type="checkbox"]:checked + label:after {
+  content: '✔';
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: #fff;
+}

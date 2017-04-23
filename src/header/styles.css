@@ -1,0 +1,17 @@
+@import '../ui/variables.css';
+
+.header {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid var(--secondary-text);
+}
+
+.customer-name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.customer-id {
+    color: var(--secondary-text);
+    font-size: 12px;
+}
